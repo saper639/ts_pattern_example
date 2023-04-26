@@ -56,16 +56,3 @@ sender2.send('Message 2');
 
 const sender3 = new DelayNotificationSender(new TelegramProvider());
 sender3.sendDelayed('Message 3', 5000);
-
-class Pricol implements IProvider {
-	sendMessage(message: string): void {
-		throw new Error("Method not implemented.");
-	}
-	connect(config: unknown): void {
-		throw new Error("Method not implemented.");
-	}
-	disconnect(): void {
-		throw new Error("Method not implemented.");
-	}
-
-}
